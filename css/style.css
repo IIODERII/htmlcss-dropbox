@@ -1,0 +1,78 @@
+:root{
+    --color-button: #0061ff ;
+    --color-white: #fff ;
+    --color-black: #000 ;
+    --color-secondary: #b4d0e7 ;
+
+    /* color companies */
+
+    --color--comp-1: #a2d39b ;
+    --color-comp-1-bord: #d1e9cd ;
+    --color--comp-2: #61082b ;
+    --color--comp-2-bord: #d3115c ;
+    --color--comp-3: #0093ce ;
+    --color--comp-3-bord: #00aef4 ;
+    --color--comp-4: #ff1c1c ;
+    --color--comp-4-bord: #b21313 ;
+    --color--comp-5: #d5001f ;
+    --color--comp-5-bord: #d5001f ;
+    --color--comp-6: #b4d0e7 ;
+    --color--comp-6-bord: #8ca2b3 ;
+    --color--comp-7: #0d2481 ;
+    --color--comp-7-bord: #0d2481 ;
+    --color--comp-8: #ffd830 ;
+    --color--comp-8-bord: #ccac26 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* flex utility */
+
+.f-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.f-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.f-between{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.f-center{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.f-start{
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+/* content utility */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.big-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
