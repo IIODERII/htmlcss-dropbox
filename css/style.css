@@ -46,8 +46,8 @@
 
 .f-between{
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .f-center{
@@ -66,7 +66,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--color-black);
 }
 
@@ -134,7 +134,7 @@ main{
     
 }
 
-/* hero */
+/* inizio hero */
 
 .hero-container{
     padding-top: 150px;
@@ -178,5 +178,95 @@ main{
     left: 0;
     bottom: 0;
 }
+
+/* fine hero */
+
+/* inizio prima section */
+
+    .first-section{
+        padding-top: 150px;
+    }
+
+    section h2{
+        font-size: 2em;
+    }
+
+    .first-section input{
+        margin-top: 50px;
+    }
+
+    .first-section label{
+        padding-right: 30px;
+        padding-bottom: 40px;
+        display: inline-block;
+    }
+
+    .first-section>div{
+        flex-wrap: nowrap;
+    }
+
+    .piano{
+        padding: 20px 40px 40px 40px;
+    }
+
+    .piano-container{
+        height: 1011px;
+        border: 1px solid #dadadb;
+    }
+
+    .piano-container.middle{
+        margin: 0 20px;
+    }
+
+    .piano-container h3{
+        border-bottom: 1px solid #dadadb;    
+        text-align: center;
+        padding: 10px;
+    }
+
+    .piano *, .piano .btn{
+        display: block;
+        padding-top: 20px;
+    }
+
+    .piano .btn{
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .piano li i{
+        color: var(--color-button);
+    }
+
+    .piano ul{
+        padding: 0;
+    }
+
+    .piano i, .bord-bot{
+        display: inline-block;
+    }
+
+    .piano a{
+        display: inline-block;
+        text-decoration: underline;
+        color: var(--color-button);
+    }
+
+    .piano .btn{
+        color: var(--color-white);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .piano .bord-bot{
+        border-bottom: 1px solid #dadadb;
+        padding-bottom: 50px;
+    }
+
+    .piano .salienti{
+        margin-top: 30px;
+    }
+
+/* fine prima section */
 
 /* footer */
