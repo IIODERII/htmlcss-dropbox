@@ -508,8 +508,41 @@ main h2{
 
 /* inizio sesta section */
 
+#sixth-section h2+details{
+    margin-top: 40px;
+    border-top: 1px solid #666;
+}
 
+#sixth-section details{
+    border-bottom: 1px solid #666;
+}
 
+#sixth-section summary{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 40px 0;
+    font-size: 1.2em;
+}
+
+#sixth-section p{
+    padding: 0 0 30px 1.5em;
+    margin-top: -25px;
+}
+
+summary {
+    display: block;
+}
+  
+summary::after {
+   margin-left: 25%;
+   display: inline-block;
+   content: "\26DB";
+   transition: 0.2s;
+}
+ 
+ details[open] > summary::after {
+   transform: rotate(90deg);
+}
 /* fine sesta section */
 
 /* footer */
