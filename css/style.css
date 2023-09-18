@@ -32,6 +32,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* flex utility */
 
 .f-row{
@@ -138,6 +142,10 @@ header a:hover{
 
 /* main */
 
+.mg-top{
+    margin-top: 150px;
+}
+
 /* inizio hero */
 
 .hero-container{
@@ -185,31 +193,23 @@ header a:hover{
 
 /* fine hero */
 
-main section{
-    margin-bottom: 50px;
-}
-
 /* inizio prima section */
-
-    .first-section{
-        padding-top: 150px;
-    }
 
     section h2{
         font-size: 2em;
     }
 
-    .first-section input{
+    #first-section input{
         margin-top: 50px;
     }
 
-    .first-section label{
+    #first-section label{
         padding-right: 30px;
         padding-bottom: 40px;
         display: inline-block;
     }
 
-    .first-section>div{
+    #first-section>div{
         flex-wrap: nowrap;
     }
 
@@ -243,6 +243,15 @@ main section{
 
     .piano li i{
         color: var(--color-button);
+    }
+
+    .piano .text-grey{
+        color: #666;
+    }
+
+    .piano .indent{
+        text-indent: -0.6em;
+        padding-left: 1em;
     }
 
     .piano ul{
@@ -297,6 +306,10 @@ main section{
         width: 70%;
     }
 
+    .first-sec-bottom{
+        margin-top: 100px;
+    }
+
     .first-sec-bottom .img-cont{
         width: 60%;
     }
@@ -318,5 +331,27 @@ main section{
     }
 
 /* fine prima section */
+
+/* inizio seconda section */
+
+#second-section .card-container{
+    width: calc(100% / 3);
+    padding: 25px;
+    min-width: 320px;
+}
+
+#second-section .card *{
+    margin-top: 20px;
+}
+
+#second-section .card img{
+    width: 100%;
+}
+
+#second-section .card h3{
+    font-size: 1.8em;
+}
+
+/* fine seconda section */
 
 /* footer */
