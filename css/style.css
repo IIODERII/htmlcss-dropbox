@@ -114,7 +114,7 @@ a{
 .head-wrapper{
     position: fixed;
     top: 0;
-    padding: 20px;
+    padding: 0 20px;
     background-color: var(--color-white);
     width: 100%;
     z-index: 1000;
@@ -122,22 +122,55 @@ a{
 }
 
 .logo:hover{
-    background-color: var(--color-white);
+    background-color: transparent;
 }
 
 .logo{
-    vertical-align: middle;
     padding-left: 0;
+    height: 100%;
 }
 
 header a {
-    vertical-align: middle;
     color: var(--color-black);
-    padding: 10px 20px;
+    padding: 20px 20px 10px;
+    display: inline-block;
 }
 
 header a:hover{
     background-color: var(--color-white-hover);
+}
+
+.head-wrapper .btn{
+    padding: 10px 20px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    align-self: center;
+}
+
+.head-wrapper .head-hover:hover > .hov{
+    display: flex;
+}
+
+.head-wrapper .hov{
+    position: absolute;
+    top: 55px;
+    display: none;
+    z-index: 1000;
+    background-color: var(--color-white-hover);
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.5);
+}
+
+.head-wrapper .hov ul{
+    list-style: none;
+}
+
+.head-wrapper .hov ul li{
+    padding: 10px 50px 10px 10px;
+}
+
+.head-wrapper .hov ul li:hover{
+    background-color: #e7e0d7;
 }
 
 /* main */
@@ -508,16 +541,16 @@ main h2{
 
 /* inizio sesta section */
 
-#sixth-section h2+details{
+#sixth-section h2+.faq-wrapper{
     margin-top: 40px;
     border-top: 1px solid #666;
 }
 
-#sixth-section details{
+#sixth-section .faq-wrapper{
     border-bottom: 1px solid #666;
 }
 
-#sixth-section summary{
+#sixth-section .question{
     font-weight: bold;
     cursor: pointer;
     padding: 40px 0;
@@ -527,22 +560,31 @@ main h2{
 #sixth-section p{
     padding: 0 0 30px 1.5em;
     margin-top: -25px;
+    display: none;
 }
 
-summary {
-    display: block;
+#sixth-section .question {
+    display: inline-block;
 }
   
-summary::after {
+#sixth-section .fa-solid.fa-angle-down {
    margin-left: 25%;
    display: inline-block;
-   content: "\26DB";
    transition: 0.2s;
 }
+
+#sixth-section .faq-wrapper:hover{
+    background-color: var(--color-white-hover);
+}
  
- details[open] > summary::after {
+#sixth-section .faq-wrapper:hover > .fa-solid.fa-angle-down{
    transform: rotate(90deg);
 }
+
+#sixth-section .faq-wrapper:hover > p{
+    display: block;
+}
+
 /* fine sesta section */
 
 /* footer */
