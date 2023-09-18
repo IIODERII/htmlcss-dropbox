@@ -17,11 +17,11 @@
     --color--comp-4: #ff1c1c ;
     --color--comp-4-bord: #b21313 ;
     --color--comp-5: #d5001f ;
-    --color--comp-5-bord: #d5001f ;
+    --color--comp-5-bord: #880013 ;
     --color--comp-6: #b4d0e7 ;
     --color--comp-6-bord: #8ca2b3 ;
     --color--comp-7: #0d2481 ;
-    --color--comp-7-bord: #0d2481 ;
+    --color--comp-7-bord: #050e34 ;
     --color--comp-8: #ffd830 ;
     --color--comp-8-bord: #ccac26 ;
 }
@@ -146,6 +146,10 @@ header a:hover{
     margin-top: 150px;
 }
 
+main h2{
+    font-size: 2.5em;
+}
+
 /* inizio hero */
 
 .hero-container{
@@ -194,10 +198,6 @@ header a:hover{
 /* fine hero */
 
 /* inizio prima section */
-
-    section h2{
-        font-size: 2em;
-    }
 
     #first-section input{
         margin-top: 50px;
@@ -353,5 +353,135 @@ header a:hover{
 }
 
 /* fine seconda section */
+
+/* inizio terza section */
+
+#third-section h2{
+    width: 60%;
+}
+
+#third-section a{
+    color: var(--color-button);
+    text-decoration: underline;
+    padding-top: 30px;
+    display: block;
+}
+
+/* fine terza section */
+
+/* inizio quarta section */
+
+#fourth-section .comp-wrapper{
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+#fourth-section .company{
+    width: 50%;
+    height: 50%;
+}
+
+#fourth-section .company img{
+    width: 60%;
+    fill: var(--color-white);
+}
+
+#fourth-section .company img{
+    filter: invert(100%)
+}
+
+#fourth-section .company:hover{
+  cursor: pointer;
+}
+/* colori compagnie (con hover) */
+
+.company#comp-1{
+    background-color: var(--color--comp-1);
+}
+
+.company#comp-1:hover{
+    border: 10px solid var(--color-comp-1-bord);
+}
+ 
+.company#comp-2{
+    background-color: var(--color--comp-2);
+}
+
+.company#comp-2:hover{
+    border: 10px solid var(--color--comp-2-bord);
+}
+ 
+.company#comp-3{
+    background-color: var(--color--comp-3);
+}
+
+.company#comp-3:hover{
+    border: 10px solid var(--color--comp-3-bord);
+}
+ 
+.company#comp-4{
+    background-color: var(--color--comp-4);
+}
+
+.company#comp-4:hover{
+    border: 10px solid var(--color--comp-4-bord);
+}
+ 
+.company#comp-5{
+    background-color: var(--color--comp-5);
+}
+
+.company#comp-5:hover{
+    border: 10px solid var(--color--comp-5-bord);
+}
+ 
+.company#comp-6{
+    background-color: var(--color--comp-6);
+}
+
+.company#comp-6:hover{
+    border: 10px solid var(--color--comp-6-bord);
+}
+ 
+.company#comp-7{
+    background-color: var(--color--comp-7);
+}
+
+.company#comp-7:hover{
+    border: 10px solid var(--color--comp-7-bord);
+}
+ 
+.company#comp-8{
+    background-color: var(--color--comp-8);
+}
+
+.company#comp-8:hover{
+    border: 10px solid var(--color--comp-8-bord);
+}
+
+/* fine colori compagnie */
+
+#fourth-section .comp-center{
+    padding: 60px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+}
+
+#fourth-section .comp-center img{
+    width: 50%;
+    margin-bottom: 50px;
+    min-width: 160px;
+}
+
+#fourth-section .comp-center p{
+    padding: 50px 0;
+}
+
+#fourth-section .hr{
+    width: 20%;
+    border-bottom: 1px solid #666;
+}
+
+/* fine quarta section */
 
 /* footer */
