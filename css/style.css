@@ -148,6 +148,7 @@ header a:hover{
 
 main h2{
     font-size: 2.5em;
+    font-weight: 800;
 }
 
 /* inizio hero */
@@ -483,5 +484,32 @@ main h2{
 }
 
 /* fine quarta section */
+
+/* inizio quinta section */
+
+#fifth-section{
+    background-color: var(--color-secondary);
+    padding: 100px 0;
+}
+
+#fifth-section h2{
+    color: #61082b;
+    width: 50%;
+}
+
+#fifth-section a{
+    border: transparent;
+    display: block;
+    width: 30%;
+    text-align: center;
+}
+
+/* fine quinta section */
+
+/* inizio sesta section */
+
+
+
+/* fine sesta section */
 
 /* footer */
