@@ -46,8 +46,6 @@
 
 .f-between{
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
 }
 
 .f-center{
@@ -57,7 +55,6 @@
 }
 
 .f-start{
-    justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
 }
@@ -84,6 +81,17 @@ body{
     padding: 10px 20px;
     background-color: var(--color-button);
     color: var(--color-white);
+}
+
+.white-btn{
+    padding: 10px 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
+}
+
+.white-btn:hover{
+    background-color: var(--color-white-hover);
 }
 
 .btn:hover{
@@ -129,10 +137,6 @@ header a:hover{
 }
 
 /* main */
-
-main{
-    
-}
 
 /* inizio hero */
 
@@ -181,6 +185,10 @@ main{
 
 /* fine hero */
 
+main section{
+    margin-bottom: 50px;
+}
+
 /* inizio prima section */
 
     .first-section{
@@ -210,7 +218,6 @@ main{
     }
 
     .piano-container{
-        height: 1011px;
         border: 1px solid #dadadb;
     }
 
@@ -265,6 +272,49 @@ main{
 
     .piano .salienti{
         margin-top: 30px;
+    }
+
+    #team-btn{
+        display: inline-block;
+    }
+
+    .piano .f-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .long-piano-container{
+        margin: 20px 0;
+    }
+
+    .long-piano h2, .long-piano div{
+        padding-top: 0;
+    }
+
+    .long-piano .left-between{
+        width: 70%;
+    }
+
+    .first-sec-bottom .img-cont{
+        width: 60%;
+    }
+
+    .first-sec-bottom .text-cont{
+        width: 30%;
+    }
+
+    .first-sec-bottom img{
+        width: 100%;
+    }
+
+    .first-sec-bottom h3{
+        font-size: 2em;
+    }
+
+    .first-sec-bottom .text-cont *{
+        margin: 20px 0;
     }
 
 /* fine prima section */
