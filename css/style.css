@@ -546,3 +546,42 @@ summary::after {
 /* fine sesta section */
 
 /* footer */
+
+footer{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 100px 0 50px;
+}
+
+.foot-top h3{
+    font-size: 1.7em;
+    padding-bottom: 25px;
+}
+
+.foot-top ul{
+    list-style: none;
+}
+
+.foot-top a{
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.foot-top a:hover{
+    text-decoration: underline;
+}
+
+footer .hr{
+    border-bottom: 1px solid var(--color-white);
+    width: 8%;
+    margin: 100px 0 40px;
+}
+
+.foot-bottom select{
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-left: 5px;
+}
