@@ -109,6 +109,8 @@ a{
 
 /* content */
 
+/* inizio main page */
+
 /* header */
 
 .head-wrapper{
@@ -134,6 +136,7 @@ header a {
     color: var(--color-black);
     padding: 20px 20px 10px;
     display: inline-block;
+    position: relative;
 }
 
 header a:hover{
@@ -154,11 +157,13 @@ header a:hover{
 .head-wrapper .hov{
     position: absolute;
     top: 55px;
+    left: 0;
     display: none;
+    min-width: 280px;
     z-index: 1000;
     background-color: var(--color-white-hover);
     padding: 20px;
-    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 5px 5px rgba(51, 51, 51, 0.3);
 }
 
 .head-wrapper .hov ul{
@@ -171,6 +176,10 @@ header a:hover{
 
 .head-wrapper .hov ul li:hover{
     background-color: #e7e0d7;
+}
+
+.head-wrapper .hov ul li:first-child:hover{
+    background-color: transparent
 }
 
 /* main */
@@ -627,3 +636,129 @@ footer .hr{
     color: var(--color-white);
     padding-left: 5px;
 }
+
+/* fine main page */
+
+/* inizio login page */
+
+/* header login */
+
+#login .head-wrapper .hov{
+    right: 0;
+    left: auto;
+}
+
+/* main login */
+
+#login .mg-top{
+    margin-top: 30px;
+}
+
+#login .container{
+    margin-top: 150px;
+}
+
+#login .login-form{
+    width: 350px;
+}
+
+#login h1{
+    font-weight: 500;
+}
+
+#login main a , #login main input{
+    display: flex;
+    height: 4em;
+    align-items: center;
+    color: #000;
+    padding: 0 10px;
+}
+
+#login main img{
+    width: 1.5em;
+    font-size: 2em;
+    width: 10%;
+    vertical-align: middle;
+}
+
+#login main i{
+    font-size: 2.5em;
+    width: 10%;
+    vertical-align: middle;
+    padding-bottom: 8px;
+}
+
+#login .login-text{
+    display: block;
+    width: 90%;
+    text-align: center;
+}
+
+#login .google{
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+#login .google:hover{
+    border: 1px solid #d2e3fc;
+    background-color: #f8faff;
+}
+
+#login .apple{
+    border: 1px solid #000;
+}
+
+#login .apple:hover{
+    background-color: #ebebeb;
+}
+
+#login .hr{
+    font-size: 1.5em;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#login .hr span{
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+#login .hr::before , #login .hr::after{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #666;
+    width: 36.5%;
+    vertical-align: middle;
+}
+
+#login main label{
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#login form , #login input{
+    width: 100%;
+}
+
+#login .email:hover{
+    border: 2px solid #000;
+}
+
+#login .btn{
+    display: block;
+    text-align: center;
+    padding: 17px 20px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+#login .btn:hover{
+    background-color: var(--color-button-hover);
+}
+
+#login footer{
+    margin-top: 100px;
+}
+
+/* fine login page */
