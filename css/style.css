@@ -148,6 +148,11 @@ header a:hover{
     background-color: var(--color-button);
     color: var(--color-white);
     align-self: center;
+    margin-left: 5px;
+}
+
+header .head-wrapper .btn:hover{
+    background-color: var(--color-button-hover);
 }
 
 .head-wrapper .head-hover:hover > .hov{
@@ -156,7 +161,7 @@ header a:hover{
 
 .head-wrapper .hov{
     position: absolute;
-    top: 55px;
+    top: 100%;
     left: 0;
     display: none;
     min-width: 280px;
@@ -205,6 +210,11 @@ main h2{
     font-weight: 800;
 }
 
+.hero .over{
+    position: relative;
+    top: 60px;
+}
+
 .hero-left{
     width: 30%;
     position: relative;
@@ -217,12 +227,10 @@ main h2{
 
 .hero img{
     width: 90%;
-    position: relative;
-    top: 60px;
 }
 
 .hero p{
-    padding: 60px 0 30px;
+    padding: 0 0 30px;
 }
 
 .hero span{
@@ -235,7 +243,7 @@ main h2{
     color: var(--color-black);
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 100px;
 }
 
 /* fine hero */
@@ -557,6 +565,8 @@ main h2{
 
 #sixth-section .faq-wrapper{
     border-bottom: 1px solid #666;
+    position: relative;
+    min-width: 750px;
 }
 
 #sixth-section .question{
@@ -577,7 +587,9 @@ main h2{
 }
   
 #sixth-section .fa-solid.fa-angle-down {
-   margin-left: 25%;
+   position: absolute;
+   top: 45px;
+   right: 30px;
    display: inline-block;
    transition: 0.2s;
 }
@@ -646,6 +658,10 @@ footer .hr{
 #login .head-wrapper .hov{
     right: 0;
     left: auto;
+}
+
+#login .head-wrapper{
+    padding-right: 0;
 }
 
 /* main login */
@@ -723,7 +739,7 @@ footer .hr{
     vertical-align: middle;
 }
 
-#login .hr::before , #login .hr::after{
+#login main .hr::before , #login main .hr::after{
     content: "";
     display: inline-block;
     height: 1px;
@@ -762,3 +778,185 @@ footer .hr{
 }
 
 /* fine login page */
+
+/* inizio get started page */
+
+#inizia .mg-top{
+    margin-top: 50px;
+}
+
+/* header get started */
+
+#inizia .head-wrapper{
+    padding-right: 0;
+}
+
+/* main get started */
+
+#inizia .main-wrapper{
+    background-color: var(--color-white-hover);
+}
+
+/* hero */
+
+#inizia .hero{
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 800px;
+}
+
+#inizia .hero h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+/* main content */
+
+#inizia .main-content .radio{
+    display: inline-block;
+    padding: 40px 20px 0;
+}
+
+#inizia .main-content label{
+    padding-right: 15px;
+    font-size: 1.5em;
+}
+
+/* card section */
+
+#inizia .card{
+    background-color: var(--color-white);
+    padding: 30px;
+    min-width: 300px;
+    min-height: 550px;
+    position: relative;
+}
+
+#inizia .mg-card{
+    margin-top: 30px;
+}
+
+#inizia .card-container{
+    width: calc(100% / 3);
+    padding: 20px;
+}
+
+#inizia .best-seller{
+    width: 100%;
+    color: #fff;
+    background-color: #0f503c;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 100%;
+    margin-left: -30px;
+}
+
+#inizia .card h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#inizia .btn{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+#inizia strong , #inizia a{
+    display: block;
+}
+
+#inizia .card .hidden{
+    visibility: hidden;
+}
+
+#inizia .btn .fa-solid.fa-arrow-right{
+    position: absolute;
+    right: 35px;
+    transition: all 0.3s;
+}
+
+#inizia .btn:hover > .fa-solid.fa-arrow-right{
+    right: 25px;
+}
+
+#inizia .fa-solid.fa-check{
+    color: var(--color-button);
+}
+
+#inizia .card ul{
+    list-style: none;
+}
+
+#inizia .card li{
+    text-indent: -0.6em;
+    padding-left: 1em;
+}
+
+#inizia .card .spazio{
+    height: 3em;
+}
+
+#inizia .blue-label{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #d6e6ff;
+}
+
+#inizia .green-label{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #e5efe0;
+}
+
+#inizia .card .link{
+    text-decoration: none;
+    color: var(--color-button);
+    text-decoration: underline;
+}
+
+#inizia .link .fa-solid.fa-arrow-right{
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+
+#inizia .link:hover > .fa-solid.fa-arrow-right{
+    left: 5px;
+}
+
+#inizia .card li{
+    padding: 3px 0;
+}
+
+/* piano gratuito */
+
+#inizia .free-plan>div{
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#inizia .free-plan h2{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#inizia .free-plan a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-black);
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 1.3em;
+    padding-bottom: 80px;
+}
+
+/* fine get started page */
+
