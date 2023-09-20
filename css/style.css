@@ -244,6 +244,11 @@ main h2{
     position: absolute;
     left: 0;
     bottom: 100px;
+    transition: all 0.5s;
+}
+
+.arrow:hover{
+    bottom: 90px;
 }
 
 /* fine hero */
